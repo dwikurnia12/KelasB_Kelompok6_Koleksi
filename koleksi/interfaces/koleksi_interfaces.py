@@ -65,7 +65,6 @@ class Jurnal(Koleksi):
 
 class DVDFilm(Koleksi):
     def __init__(self, kode_koleksi, judul, tahun_terbit, bidang_ilmu, durasi):
-        # DVD Film Dokumenter tidak memiliki penerbit di lembar soal, set default "-"
         super().__init__("DVD Film Dokumenter", kode_koleksi, judul, tahun_terbit, "-")
         self.bidang_ilmu = bidang_ilmu
         self.durasi = durasi

@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class Koleksi(ABC):
     def __init__(self, jenis, kode_koleksi, judul, tahun_terbit, penerbit):
         self.jenis = jenis
@@ -13,7 +12,6 @@ class Koleksi(ABC):
     def tampil_data(self, nomor):
         """Method abstrak yang WAJIB di-override oleh class turunan"""
         pass
-
 
 
 class Buku(Koleksi):
@@ -61,19 +59,3 @@ class Jurnal(Koleksi):
         print(f"Penerbit      : {self.penerbit}")
         print(f"Impact Factor : {self.impact_factor}")
         print(f"Bidang Studi  : {self.bidang_studi}")
-
-
-class DVDFilm(Koleksi):
-    def __init__(self, kode_koleksi, judul, tahun_terbit, bidang_ilmu, durasi):
-        super().__init__("DVD Film Dokumenter", kode_koleksi, judul, tahun_terbit, "-")
-        self.bidang_ilmu = bidang_ilmu
-        self.durasi = durasi
-
-    def tampil_data(self, nomor):
-        print(f"Koleksi {nomor}:")
-        print(f"Jenis         : {self.jenis}")
-        print(f"Kode Koleksi  : {self.kode_koleksi}")
-        print(f"Judul         : {self.judul}")
-        print(f"Tahun         : {self.tahun_terbit}")
-        print(f"Bidang Ilmu   : {self.bidang_ilmu}")
-        print(f"Durasi        : {self.durasi}")

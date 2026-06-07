@@ -2,17 +2,15 @@ from models.koleksi import Koleksi
 
 class Buku(Koleksi):
 
-    def __init__(self, kode, judul, tahun,
-                 pengarang, penerbit):
-        super().__init__(kode, judul, tahun)
+    def __init__(self, kode_koleksi, judul, tahun_terbit, pengarang, penerbit):
+        super().__init__(kode_koleksi, judul, tahun_terbit, penerbit)
 
-        self.pengarang = pengarang
-        self.penerbit = penerbit
+        self._pengarang = pengarang
 
-    def tampil(self):
+    def tampilkan_info(self):
         print("Jenis : Buku")
-        print("Kode :", self.kode)
-        print("Judul :", self.judul)
-        print("Tahun :", self.tahun)
-        print("Pengarang :", self.pengarang)
-        print("Penerbit :", self.penerbit)
+        print("Kode :", self._kode_koleksi)
+        print("Judul :", self._judul)
+        print("Tahun :", self._tahun_terbit)
+        print("Pengarang :", self._pengarang)
+        print("Penerbit :", self._penerbit)

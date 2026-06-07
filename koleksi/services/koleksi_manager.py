@@ -7,17 +7,21 @@ class KoleksiManager:
         
     def hapus_koleksi(self, kode):
         for item in self.koleksi_list:
-            if item.kode_koleksi == kode:
+            if item.get_kode() == kode:
                 self.koleksi_list.remove(item)
                 print("Hapus data koleksi sukses")
                 return True
-        print("Kode koleksi tidak ditemukan")
-        return False
+            print("Kode koleksi tidak ditemukan")
+            return False
+    
+    def tampilkan_info(self):
 
-    def tampil_semua(self):
         if not self.koleksi_list:
             print("Tidak ada data koleksi.")
             return
-        print("\nDATA KOLEKSI")
-        for i, item in enumerate(self.koleksi_list, 1):
-            item.tampil_data(i)
+        
+        for item in self.koleksi_list:
+            item.tampilkan_info()
+            print("-" * 30)
+    
+

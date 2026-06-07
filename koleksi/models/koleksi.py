@@ -1,6 +1,5 @@
 from abc import abstractmethod
-from koleksi.interfaces.koleksi_interfaces import KoleksiInterface
-
+from interfaces.koleksi_interfaces import KoleksiInterface
 
 class Koleksi(KoleksiInterface):
 

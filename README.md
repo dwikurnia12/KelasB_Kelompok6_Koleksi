@@ -48,9 +48,9 @@ koleksi/
 
 ## Contoh Output
 
-===========================
-MENU DATA KOLEKSI
-===========================
+---------------------------
+Menu Koleksi
+---------------------------
 1. Tambah Koleksi
 2. Hapus Koleksi
 3. Tampilkan Semua Koleksi

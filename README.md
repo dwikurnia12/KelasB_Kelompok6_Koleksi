@@ -25,6 +25,7 @@ Fitur yang tersedia yaitu:
 
 ## Struktur Repository
 
+```text
 koleksi/
 │
 ├── interfaces/
@@ -45,6 +46,7 @@ koleksi/
 │
 ├── main.py
 └── README.md
+```
 
 ## Contoh Output
 

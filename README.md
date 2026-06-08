@@ -49,7 +49,7 @@ koleksi/
 ```
 
 ## Contoh Output
-
+```text
 ---------------------------
 Menu Koleksi
 ---------------------------
@@ -57,5 +57,5 @@ Menu Koleksi
 2. Hapus Koleksi
 3. Tampilkan Semua Koleksi
 4. Keluar
-
+```
 
